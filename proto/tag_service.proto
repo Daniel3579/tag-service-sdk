@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "./gen;tag_pb";
+
+import "tag_requests.proto";
+import "tag_responses.proto";
+
+service TagService {
+    rpc Create (CreateRequest) returns (Tag);
+    rpc Read (IdRequest) returns (Tag);
+    rpc Update (Tag) returns (Tag);
+    rpc Delete (IdRequest) returns (Tag);
+}

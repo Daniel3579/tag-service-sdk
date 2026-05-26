@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option go_package = "./gen;tag_pb";
+
+message Tag {
+    int32 tag_id = 1;
+    string name = 2;
+}
