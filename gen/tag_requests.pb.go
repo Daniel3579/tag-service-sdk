@@ -23,7 +23,7 @@ const (
 
 type IdRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	UserId        int32                  `protobuf:"varint,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
+	TagId         int32                  `protobuf:"varint,1,opt,name=tag_id,json=tagId,proto3" json:"tag_id,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -58,9 +58,9 @@ func (*IdRequest) Descriptor() ([]byte, []int) {
 	return file_tag_requests_proto_rawDescGZIP(), []int{0}
 }
 
-func (x *IdRequest) GetUserId() int32 {
+func (x *IdRequest) GetTagId() int32 {
 	if x != nil {
-		return x.UserId
+		return x.TagId
 	}
 	return 0
 }
@@ -113,9 +113,9 @@ var File_tag_requests_proto protoreflect.FileDescriptor
 
 const file_tag_requests_proto_rawDesc = "" +
 	"\n" +
-	"\x12tag_requests.proto\"$\n" +
-	"\tIdRequest\x12\x17\n" +
-	"\auser_id\x18\x01 \x01(\x05R\x06userId\"#\n" +
+	"\x12tag_requests.proto\"\"\n" +
+	"\tIdRequest\x12\x15\n" +
+	"\x06tag_id\x18\x01 \x01(\x05R\x05tagId\"#\n" +
 	"\rCreateRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04nameB\x0eZ\f./gen;tag_pbb\x06proto3"
 
